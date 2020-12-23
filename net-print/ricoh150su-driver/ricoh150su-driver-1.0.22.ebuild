@@ -50,7 +50,6 @@ src_install() {
 }
 
 pkg_postinst() {
-	elog
 	elog "You need to restart cupsd to be able to use this driver."
 
 	if has_version 'sys-apps/systemd' ; then
